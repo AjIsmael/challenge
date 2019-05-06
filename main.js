@@ -24,11 +24,17 @@ function fizzBuzz(){
 let vowels = ["a", "e", "i", "o", "u"]
 function pigLatin() {
   let sentence = prompt("enter a sentence")
+  let newSentence = []
   words = sentence.split(' ')
   console.log(words);
   for (word in words){
     letters = words[word].split('')
-    letters.push("ay")
+    if (vowels.includes(letters[0]) ){
+      letters.push("ay")
+      x = letters.join('')
+      console.log(x);
+    }
+
     console.log(letters);
   }
 
