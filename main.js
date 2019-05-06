@@ -9,7 +9,10 @@ function fizzBuzz(){
   while (i != 101){
     if (i%3 == 0 && i%5==0){
       console.log("FizzBuzz")
-    }else{
+    }else if (i%3 == 0){
+      console.log("Fizz");
+    }
+    else{
 
       console.log(i);
     }
