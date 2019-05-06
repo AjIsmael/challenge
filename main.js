@@ -20,3 +20,11 @@ function fizzBuzz(){
     i++
   }
 }
+
+let vowels = ["a", "e", "i", "o", "u"]
+function pigLatin() {
+  let sentence = prompt("enter a sentence")
+  x = sentence.split(' ')
+  console.log(x);
+
+}
