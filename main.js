@@ -8,7 +8,7 @@ function fizzBuzz(){
   let i = 1
   while (i != 101){
     if (i%3 == 0 && i%5==0){
-      console.log("Fizz")
+      console.log("FizzBuzz")
     }else{
 
       console.log(i);
