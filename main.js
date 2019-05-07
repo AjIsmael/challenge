@@ -40,16 +40,16 @@ function pigLatin() {
     } else {
       changePlace(letters)
       let evalu = vowels.includes(letters[0])
-      for (var i = 0; i < letters.length; i++) {
-        if (!evalu) {
-          changePlace(letters)
-        }
-
-
-
-      }
-
-      console.log(letters);
+      // for (var i = 0; i < letters.length; i++) {
+      //   if (!evalu) {
+      //     changePlace(letters)
+      //   }
+      //
+      //
+      //
+      // }
+      //
+      // console.log(letters);
       //   console.log(!evalu)
       //   cutLetter
       //   letters.push(cutLetter)
