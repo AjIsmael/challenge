@@ -26,7 +26,7 @@ function changePlace(list){
   letters.push(cutLetter)
   return letters
 }
-let vowels = ["a", "e", "i", "o", "u"]
+let vowels = ["a", "e", "i", "o", "u", "A","E","I","O","U"]
 function pigLatin() {
   let sentence = prompt("enter a sentence")
   let newSentence = []
