@@ -26,7 +26,6 @@ function pigLatin() {
   let sentence = prompt("enter a sentence")
   let newSentence = []
   words = sentence.split(' ')
-  console.log(words);
   for (word in words){
     letters = words[word].split('')
     if (vowels.includes(letters[0])){
@@ -38,11 +37,15 @@ function pigLatin() {
       let cutLetter = letters.shift()
       cutLetter
       letters.push(cutLetter)
+      letters.push("ay")
       x = letters.join('')
       newSentence.push(x)
-      }
-
+      // for (i = 0; i < letters.length; i++){
+      //   if(vowels.includes(letters[i]) == false){
+      //    }
+      // }
+    }
   }
 let outPut = newSentence.join(' ')
 console.log(outPut);
-  }
+}
