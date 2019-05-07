@@ -20,7 +20,12 @@ function fizzBuzz(){
     i++
   }
 }
-
+function changePlace(list){
+  let cutLetter = letters.shift()
+  cutLetter
+  letters.push(cutLetter)
+  return letters
+}
 let vowels = ["a", "e", "i", "o", "u"]
 function pigLatin() {
   let sentence = prompt("enter a sentence")
@@ -33,10 +38,23 @@ function pigLatin() {
       x = letters.join('')
       newSentence.push(x)
     } else {
-      let i = 0
-      let cutLetter = letters.shift()
-      cutLetter
-      letters.push(cutLetter)
+      changePlace(letters)
+      let evalu = vowels.includes(letters[0])
+      for (var i = 0; i < letters.length; i++) {
+        if (!evalu) {
+          changePlace(letters)
+        }
+
+
+
+      }
+
+      console.log(letters);
+      //   console.log(!evalu)
+      //   cutLetter
+      //   letters.push(cutLetter)
+      //   return letters
+      // }
       letters.push("ay")
       x = letters.join('')
       newSentence.push(x)
