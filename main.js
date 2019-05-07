@@ -29,14 +29,20 @@ function pigLatin() {
   console.log(words);
   for (word in words){
     letters = words[word].split('')
-    if (vowels.includes(letters[0]) ){
+    if (vowels.includes(letters[0])){
       letters.push("ay")
       x = letters.join('')
-      console.log(x);
-    }
+      newSentence.push(x)
+    } else {
+      let i = 0
+      let cutLetter = letters.shift()
+      cutLetter
+      letters.push(cutLetter)
+      x = letters.join('')
+      newSentence.push(x)
+      }
 
-    console.log(letters);
   }
-
-
-}
+let outPut = newSentence.join(' ')
+console.log(outPut);
+  }
