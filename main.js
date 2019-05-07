@@ -33,35 +33,30 @@ function pigLatin() {
   words = sentence.split(' ')
   for (word in words){
     letters = words[word].split('')
+    var evalu = vowels.includes(letters[0])
     if (vowels.includes(letters[0])){
       letters.push("ay")
       x = letters.join('')
       newSentence.push(x)
     } else {
       changePlace(letters)
-      let evalu = vowels.includes(letters[0])
-      // for (var i = 0; i < letters.length; i++) {
-      //   if (!evalu) {
-      //     changePlace(letters)
-      //   }
-      //
-      //
-      //
-      // }
-      //
-      // console.log(letters);
-      //   console.log(!evalu)
-      //   cutLetter
-      //   letters.push(cutLetter)
-      //   return letters
-      // }
+      var x
+      if (!(vowels.includes(letters[0]))){
+        x = true
+      } else {
+        x = false
+      }
+      while (x){
+        changePlace(letters)
+        if (!(vowels.includes(letters[0]))){
+          x = true
+        } else {
+          x = false
+        }
+      }
       letters.push("ay")
       x = letters.join('')
       newSentence.push(x)
-      // for (i = 0; i < letters.length; i++){
-      //   if(vowels.includes(letters[i]) == false){
-      //    }
-      // }
     }
   }
 let outPut = newSentence.join(' ')
